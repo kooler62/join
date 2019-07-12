@@ -15,7 +15,7 @@
                         <hr>
                         Employees: <br>
                     @foreach($company->employees as $employee)
-                            <a href="">{{ $employee->firstName }}   {{ $employee->lastName }}</a>
+                            <a href="{{ route('employees.show', $employee) }}">{{ $employee->firstName }}   {{ $employee->lastName }}</a>
                     @endforeach
 
                     </div>
