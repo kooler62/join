@@ -9,8 +9,8 @@ use Faker\Generator as Faker;
 
 $factory->define(Employee::class, function (Faker $faker) {
     return [
-        'First name' => $faker->firstName(),
-        'Last name' => $faker->lastName(),
+        'firstName' => $faker->firstName(),
+        'lastName' => $faker->lastName(),
         'email' => $faker->email(),
         'phone' => $faker->phoneNumber(),
         'company_id' => Company::all()->random()->id,
