@@ -13,8 +13,8 @@
                             {{ session('status') }}
                         </div>
                     @endif
-
-                    You are logged in!
+                        <a href="{{ route('admin.companies.index') }}">Companies</a> <a href="{{ route('admin.companies.create') }}">Add company</a> <br>
+                        <a href="">Employee</a> <a href="">Add employee</a> <br>
                 </div>
             </div>
         </div>
