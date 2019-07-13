@@ -19,6 +19,7 @@ Auth::routes(['register' => false]);
 
 Route::get('/admin', 'HomeController@index')->name('dash');
 Route::resource('/admin/companies', 'Admin\CompanyController', ['as' => 'admin']);
+Route::resource('/admin/employees', 'Admin\EmployeeController', ['as' => 'admin']);
 
 Route::resource('companies', 'CompanyController')->only('index', 'show');
 Route::resource('employees', 'EmployeeController')->only('show');

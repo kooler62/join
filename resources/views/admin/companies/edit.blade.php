@@ -9,7 +9,7 @@
                     <div class="card-header">Companies</div>
 
                     <div class="card-body">
-                        {{ Form::open(['route' => ['admin.companies.update',$company], 'method' => 'PUT', 'files' => true]) }}
+                        {{ Form::open(['route' => ['admin.companies.update', $company], 'method' => 'PUT', 'files' => true]) }}
                         {{ Form::text('name', $company->name, ['class' => 'form-control', 'placeholder' => 'name']) }}
                         @if ($errors->has('name'))
                             <span>{{ $errors->first('name') }}</span>

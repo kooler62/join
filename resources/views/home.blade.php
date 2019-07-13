@@ -14,7 +14,7 @@
                         </div>
                     @endif
                         <a href="{{ route('admin.companies.index') }}">Companies</a> <a href="{{ route('admin.companies.create') }}">Add company</a> <br>
-                        <a href="">Employee</a> <a href="">Add employee</a> <br>
+                        <a href="{{ route('admin.employees.index') }}">Employees</a> <a href="{{ route('admin.employees.create') }}">Add employee</a> <br>
                 </div>
             </div>
         </div>
